@@ -1,0 +1,54 @@
+{
+  "name": "star-wars",
+  "version": "1.0.0",
+  "description": "Star wars project built with ReactJS",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "parcel src/index.html --port 3002",
+    "lint": "eslint src",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LeonardoHabitzreuter/star-wars.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "LeonardoHabitzreuter",
+  "homepage": "https://github.com/LeonardoHabitzreuter/star-wars#readme",
+  "devDependencies": {
+    "@babel/preset-react": "^7.0.0",
+    "eslint": "^6.4.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^2.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "jest": "^24.9.0",
+    "parcel-bundler": "^1.12.3"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "husky": "^4.2.3",
+    "mdi-react": "^6.2.0",
+    "polished": "^3.4.1",
+    "prop-types": "^15.7.2",
+    "ramda": "^0.26.1",
+    "ramda-adjunct": "^2.21.0",
+    "react": "^16.9.0",
+    "react-content-loader": "^5.0.2",
+    "react-dom": "^16.9.0",
+    "react-router-dom": "^5.0.1",
+    "react-toastify": "^5.4.1",
+    "react-use": "^12.2.0",
+    "styled-components": "^4.3.2"
+  },
+  "browserslist": [
+    "last 1 Chrome versions"
+  ]
+}
