@@ -19,7 +19,7 @@ const Character = ({ id }) => {
         show={state.hasError}
         message='There was an error querying for the character, try again.'
       />
-      <Starships starships={state.starships} />
+      <Starships loadingCharacter={state.loading} starships={state.starships} />
     </>
   )
 }
