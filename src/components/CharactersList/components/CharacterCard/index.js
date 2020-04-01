@@ -18,12 +18,7 @@ const Character = props => (
       <Characteristic bold>Birth year: <Typography>{props.birth_year}</Typography></Characteristic>
       <Characteristic bold>Gender: <Typography>{props.gender}</Typography></Characteristic>
     </Row>
-    <DetailsButton
-      rel="noopener noreferrer"
-      target='_blank'
-      href={mountLink(props.id)}
-      modifier='secondary'
-    >
+    <DetailsButton href={mountLink(props.id)} modifier='secondary'>
       Details
     </DetailsButton>
   </StyledCharacter>

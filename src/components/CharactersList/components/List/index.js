@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import React from 'react'
 import useGetCharacters from '../../hooks/useGetCharacters'
 import ContentLoaders from '../ContentLoaders'
@@ -12,8 +11,8 @@ const CharactersList = () => {
   return (
     <Container>
       <StyledCharactersList>
-        {state.characters.map(props => (
-          <CharacterCard key={props.id} {...props} />
+        {state.characters.map(character => (
+          <CharacterCard key={character.id} {...character} />
         ))}
 
         <ContentLoaders loading={state.loading} />
