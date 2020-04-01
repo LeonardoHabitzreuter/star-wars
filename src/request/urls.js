@@ -1,3 +1,4 @@
 export default {
-  PEOPLE: 'people'
+  PEOPLE: 'people',
+  STARSHIPS: 'starships'
 }

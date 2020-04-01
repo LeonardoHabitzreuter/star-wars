@@ -37,5 +37,9 @@ export const Characteristic = styled(Typography)`
 `
 
 export const DetailsButton = styled(Button)`
-  align-self:flex-end
+  align-self:flex-end;
+
+  ${phone(css`
+    align-self: center;
+  `)}
 `

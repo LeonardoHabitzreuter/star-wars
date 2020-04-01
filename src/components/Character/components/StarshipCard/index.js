@@ -5,7 +5,13 @@ import useGetStarship from '../../hooks/useGetStarship'
 import ErrorCard from '../ErrorCard'
 import { Typography } from '/ui'
 import { colors } from '/styles/theme'
-import { StyledStarship, Row, Characteristic } from './styles'
+import {
+  StyledStarship,
+  Row,
+  LeftCol,
+  RightCol,
+  Title
+} from './styles'
 
 const Loader = () => (
   <ContentLoader
@@ -25,39 +31,40 @@ const Loader = () => (
   </ContentLoader>
 )
 
-const StarshipCard = props => {
-  const fetch = useGetStarship(props.url)
+const StarshipCard = ({ id }) => {
+  const [state, fetch] = useGetStarship(id)
 
-  console.log(props)
   return (
     <>
       <ErrorCard
         onRetry={fetch}
-        show={props.hasError}
+        show={state.hasError}
         message='There was an error querying for the starship, try again.'
       />
 
       <StyledStarship>
 
-        {props.loading && <Loader />}
+        {state.loading && <Loader />}
 
-        {!props.loading && !props.hasError && (
+        {!state.loading && !state.hasError && (
           <>
-            <Characteristic bold>
-            Starship:
-              <Typography variant='h6'> {props.name}</Typography>
-            </Characteristic>
+            <div>
+              <Typography bold variant='subtitle'>
+                {'Starship:  '}
+              </Typography>
+              <Title variant='h6'> {state.name}</Title>
+            </div>
             <Row>
-              <Characteristic bold>Model: <Typography>{props.model}</Typography></Characteristic>
-              <Characteristic bold>Length: <Typography>{props.length}</Typography></Characteristic>
+              <LeftCol bold>Model: <Typography>{state.model}</Typography></LeftCol>
+              <RightCol bold>Length: <Typography>{state.length}</Typography></RightCol>
             </Row>
             <Row>
-              <Characteristic bold>Manufacturer: <Typography>{props.manufacturer}</Typography></Characteristic>
-              <Characteristic bold>Crew: <Typography>{props.crew}</Typography></Characteristic>
+              <LeftCol bold>Starship class: <Typography>{state.starship_class}</Typography></LeftCol>
+              <RightCol bold>Passengers: <Typography>{state.passengers}</Typography></RightCol>
             </Row>
             <Row>
-              <Characteristic bold>Starship class: <Typography>{props.starship_class}</Typography></Characteristic>
-              <Characteristic bold>Cargo capacity: <Typography>{props.cargo_capacity}</Typography></Characteristic>
+              <LeftCol bold>Cargo capacity: <Typography>{state.cargo_capacity}</Typography></LeftCol>
+              <RightCol bold>Crew: <Typography>{state.crew}</Typography></RightCol>
             </Row>
           </>
         )}
@@ -67,16 +74,7 @@ const StarshipCard = props => {
 }
 
 StarshipCard.propTypes = {
-  url: PropTypes.string.isRequired,
-  loading: PropTypes.bool.isRequired,
-  hasError: PropTypes.bool.isRequired,
-  name: PropTypes.string,
-  model: PropTypes.string,
-  manufacturer: PropTypes.string,
-  length: PropTypes.string,
-  crew: PropTypes.string,
-  starship_class: PropTypes.string,
-  cargo_capacity: PropTypes.string
+  id: PropTypes.string.isRequired
 }
 
 export default StarshipCard

@@ -1,32 +1,34 @@
-import Axios from 'axios'
-import { useContext } from 'react'
-import { useEffectOnce } from 'react-use'
-import { CharacterContext } from '../containers/CharacterContainer'
+import request, { urls } from '/request'
+import { useEffectOnce, useSetState } from 'react-use'
 
-const useGetStarship = url => {
-  const { starships, setStarShips } = useContext(CharacterContext)
+const initialState = {
+  loading: true,
+  hasError: false,
+  name: '',
+  model: '',
+  passengers: '',
+  length: '',
+  crew: '',
+  starship_class: '',
+  cargo_capacity: ''
+}
 
-  const fetchStarship = url => {
-    const updateStarship = obj => setStarShips(
-      starships.map(starship => (
-        starship.url !== obj.url
-          ? starship
-          : { ...starship, ...obj }
-      ))
-    )
+const useGetStarship = id => {
+  const [state, setState] = useSetState(initialState)
 
-    Axios
-      .get(url)
-      .then(({ data }) => updateStarship({ ...data, loading: false }))
-      .catch(() => updateStarship({ url, hasError: true, loading: false }))
+  const fetchStarship = () => {
+    request
+      .get(`${urls.STARSHIPS}/${id}`)
+      .then(({ data }) => setState({ ...data, hasError: false }))
+      .catch(() => setState({ hasError: true }))
+      .then(() => setState({ loading: false }))
   }
 
   useEffectOnce(() => {
-    console.log(url, 'effect')
-    fetchStarship(url)
+    fetchStarship()
   })
 
-  return fetchStarship
+  return [state, fetchStarship]
 }
 
 export default useGetStarship

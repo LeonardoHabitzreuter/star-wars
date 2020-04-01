@@ -6,7 +6,7 @@ import { phone, tablet } from '/styles/theme'
 export const StyledStarship = styled(Card)`
   ${({ hide }) => hide && 'display: none;'}
   box-sizing: border-box;
-  height: 150px;
+  height: auto;
   width: 100%;
   --cols: 3;
   max-width: calc(100% / var(--cols) - 20px);
@@ -32,6 +32,14 @@ export const Row = styled.div`
   justify-content: space-between;
 `
 
-export const Characteristic = styled(Typography)`
-  width: 50%;
+export const LeftCol = styled(Typography)`
+  width: 61%;
+`
+
+export const RightCol = styled(Typography)`
+  width: 39%;
+`
+
+export const Title = styled(Typography)`
+  display: inline-flex;
 `
