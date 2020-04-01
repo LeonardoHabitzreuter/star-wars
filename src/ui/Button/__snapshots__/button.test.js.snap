@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component should render properly 1`] = `
+.c0 {
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+  padding: 8px 20px;
+  color: white;
+  border: none;
+  background-color: #141414;
+  box-shadow: 1px 5px 5px #141414;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+.c0:hover {
+  background-color: #2e2e2e;
+}
+
+.c0:active {
+  background-color: #000;
+}
+
+@media (max-width:414px) {
+  .c0 {
+    padding: 8px 20px;
+    width: 100%;
+  }
+}
+
+<button
+  class="c0"
+  type="button"
+>
+  Test
+</button>
+`;

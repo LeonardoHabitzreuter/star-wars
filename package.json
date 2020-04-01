@@ -20,7 +20,11 @@
   "author": "LeonardoHabitzreuter",
   "homepage": "https://github.com/LeonardoHabitzreuter/star-wars#readme",
   "devDependencies": {
+    "@babel/preset-env": "^7.9.0",
     "@babel/preset-react": "^7.0.0",
+    "@testing-library/jest-dom": "^5.3.0",
+    "@testing-library/react": "^10.0.2",
+    "babel-jest": "^25.2.4",
     "eslint": "^6.4.0",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.18.2",
@@ -29,7 +33,8 @@
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^2.0.1",
     "eslint-plugin-standard": "^4.0.0",
-    "jest": "^24.9.0",
+    "jest": "^25.1.0",
+    "jest-styled-components": "^7.0.0",
     "parcel-bundler": "^1.12.3"
   },
   "dependencies": {
@@ -46,7 +51,7 @@
     "react-router-dom": "^5.0.1",
     "react-toastify": "^5.4.1",
     "react-use": "^12.2.0",
-    "styled-components": "^4.3.2"
+    "styled-components": "^5.0.1"
   },
   "browserslist": [
     "last 1 Chrome versions"
