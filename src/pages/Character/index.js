@@ -6,7 +6,7 @@ import Character from '/components/Character/components/Character'
 
 const CharacterPage = ({ match }) => (
   <Layout>
-    {/* <Character id={match.params.id} /> */}
+    <Character id={match.params.id} />
   </Layout>
 )
 

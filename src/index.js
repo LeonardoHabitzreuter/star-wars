@@ -16,6 +16,7 @@ const App = () => (
       <Switch>
         <Route exact path='/' component={pages.Home} />
         <Route path={pages.Home.route} component={pages.Home} />
+        <Route path={pages.Character.route} component={pages.Character} />
       </Switch>
     </Router>
   </ThemeProvider>

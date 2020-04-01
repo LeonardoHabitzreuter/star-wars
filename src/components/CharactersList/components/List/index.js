@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react'
-import useGetCharacters from '../../hooks/useGetCharactes'
+import useGetCharacters from '../../hooks/useGetCharacters'
 import ContentLoaders from '../ContentLoaders'
 import CharacterCard from '../CharacterCard'
 import { Button } from '/ui'
