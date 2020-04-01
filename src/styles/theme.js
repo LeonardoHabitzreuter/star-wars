@@ -1,3 +1,6 @@
+import * as R from 'ramda'
+import { css } from 'styled-components'
+
 export const colors = {
   primary: '#141414',
   secondary: 'white',
@@ -6,7 +9,14 @@ export const colors = {
   darkGray: '#dbdbdb'
 }
 
-export const sizes = {
-  phone: '414px',
-  tablet: '1024px'
-}
+const maxWidth = breakpoint => style => css`
+  @media (max-width: ${breakpoint}) {
+    ${style}
+  }
+`
+
+export const phone = maxWidth('414px')
+
+export const tablet = maxWidth('1024px')
+
+export const getPrimary = R.path(['theme', 'colors', 'primary'])

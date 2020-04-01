@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import ContentLoader from 'react-content-loader'
 import { colors } from '/styles/theme'
-import { StyledCharacter } from '../CharacterCard/styles'
+import { StyledCharacter } from '../Character/styles'
 
 // eslint-disable-next-line react/prop-types
 const Loader = ({ hide }) => (

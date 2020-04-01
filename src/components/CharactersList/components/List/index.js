@@ -2,7 +2,7 @@
 import React from 'react'
 import useGetCharacters from '../../hooks/useGetCharactes'
 import ContentLoaders from '../ContentLoaders'
-import Character from '../Character'
+import CharacterCard from '../CharacterCard'
 import { Button } from '/ui'
 import { Container, StyledCharactersList } from './styles'
 
@@ -13,7 +13,7 @@ const CharactersList = () => {
     <Container>
       <StyledCharactersList>
         {state.characters.map(props => (
-          <Character key={props.name} {...props} />
+          <CharacterCard key={props.id} {...props} />
         ))}
 
         <ContentLoaders loading={state.loading} />

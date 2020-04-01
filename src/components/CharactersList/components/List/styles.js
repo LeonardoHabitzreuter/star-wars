@@ -4,6 +4,7 @@ export const Container = styled.section`
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 20px;
 `
 
 export const StyledCharactersList = styled.article`

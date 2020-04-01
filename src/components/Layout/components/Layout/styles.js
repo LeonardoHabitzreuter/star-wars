@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import { phone, tablet } from '/styles/theme'
 
 export const Main = styled.main`
   padding-top: 30px;
@@ -10,21 +11,19 @@ export const Main = styled.main`
   align-items: center;
   grid-area: Main;
 
-  ${({ theme: { sizes } }) => css`
-    @media (max-width: ${sizes.tablet}) {
-      padding-top: 20px;
-      padding-bottom: 20px;
-      padding-left: 30px;
-      padding-right: 30px;
-    }
+  ${tablet(css`
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+  `)}
 
-    @media (max-width: ${sizes.phone}) {
-      padding-top: 10px;
-      padding-bottom: 10px;
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-  `}
+  ${phone(css`  
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  `)}
 `
 
 export const Layout = styled.div`

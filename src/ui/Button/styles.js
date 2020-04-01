@@ -2,20 +2,35 @@ import * as R from 'ramda'
 import styled, { css } from 'styled-components'
 import { darken, lighten } from 'polished'
 import { Link as RouterLink } from 'react-router-dom'
+import { phone } from '/styles/theme'
 import { button } from '/ui/Typography/styles'
 
-const defaultSize = css`padding: 8px 20px;`
-const smallSizeProps = css`padding: 4px 12px;`
 const fullSizeProps = css`
-  ${defaultSize};
+  padding: 8px 20px;
   width: 100%;
+`
+
+const smallSizeProps = css`
+  padding: 4px 12px;
+
+  ${phone(css`
+    ${fullSizeProps}
+  `)}
+`
+
+const defaultSize = css`
+  padding: 8px 20px;
+
+  ${phone(css`
+    ${fullSizeProps}
+  `)}
 `
 
 const primaryCss = ({ theme: { colors } }) => css`
   color: white;
   border: none;
   background-color: ${colors.primary};
-  box-shadow: 1px 5px 10px ${colors.primary};
+  box-shadow: 1px 5px 5px ${colors.primary};
   &:hover {
     background-color: ${lighten(0.1, colors.primary)}
   }
@@ -26,7 +41,7 @@ const primaryCss = ({ theme: { colors } }) => css`
 `
 
 const secondaryCss = ({ theme: { colors } }) => css`
-  color: ${darken(0.2, colors.primary)};
+  color: ${colors.secondary};
   border: solid 1px ${darken(0.2, colors.primary)};
   background-color: ${lighten(0.25, colors.primary)};
   &:active {
@@ -56,12 +71,6 @@ export const Button = styled.button`
   ${getSizeProps}
   ${getColorProps}
   ${button}
-
-  ${({ theme: { sizes } }) => css`
-    @media (max-width: ${sizes.phone}) {
-      ${fullSizeProps}
-    }
-  `}
 `
 
 export const Link = styled(RouterLink)`

@@ -10,6 +10,6 @@ const Home = () => (
 )
 
 export default withPage(Home, {
-  title: 'Página inicial',
-  route: '/inicio'
+  title: 'Home',
+  route: '/home'
 })

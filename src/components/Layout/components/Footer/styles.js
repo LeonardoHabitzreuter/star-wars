@@ -1,6 +1,8 @@
 import styled, { css } from 'styled-components'
+import { phone, getPrimary } from '/styles/theme'
 
 export const StyledFooter = styled.footer`
+  background-color: ${getPrimary};
   box-sizing: border-box;
   height: 80px;
   display: flex;
@@ -8,11 +10,7 @@ export const StyledFooter = styled.footer`
   justify-content: center;
   grid-area: Footer;
 
-  ${({ theme: { sizes, colors } }) => css`
-    background-color: ${colors.primary};
-   
-    @media (max-width: ${sizes.phone}) {
-      height: 45px;
-    }
-  `}
+  ${phone(css`
+    height: 45px;
+  `)}
 `

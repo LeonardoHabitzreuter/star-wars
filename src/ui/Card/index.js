@@ -7,7 +7,6 @@ const Card = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
   padding: 8px;
   border-radius: 4px;
   border: ${R.pipe(
