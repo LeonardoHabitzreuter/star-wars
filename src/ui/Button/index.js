@@ -16,7 +16,7 @@ LinkOrButton.propTypes = {
   children: PropTypes.node.isRequired,
   type: PropTypes.oneOf(['button', 'submit', 'reset']),
   size: PropTypes.oneOf(['normal', 'small', 'full']),
-  modifier: PropTypes.oneOf(['primary', 'secondary', 'idle']),
+  modifier: PropTypes.oneOf(['primary', 'secondary']),
   href: PropTypes.string
 }
 

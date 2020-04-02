@@ -8,6 +8,7 @@
     "lint": "eslint src",
     "test": "jest",
     "test:watch": "jest --watchAll",
+    "test:coverage": "jest --coverage",
     "build": "parcel build src/index.html"
   },
   "repository": {

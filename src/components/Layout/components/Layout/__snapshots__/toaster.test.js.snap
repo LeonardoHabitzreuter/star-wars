@@ -1,0 +1,151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout component should render properly 1`] = `
+.c1 {
+  height: 170px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  grid-area: Header;
+}
+
+.c2 {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 293px;
+  height: 100px;
+  background-image: url('https://static-mh.content.disney.io/starwars/assets/navigation/sw_logo_stacked-336c62367939.png');
+}
+
+.c4 {
+  box-sizing: border-box;
+  height: 80px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  grid-area: Footer;
+}
+
+.c3 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-area: Main;
+}
+
+.c0 {
+  min-height: 100vh;
+  display: grid;
+  grid-template-areas: "Header" "Main" "Footer";
+  grid-template-rows: auto 1fr auto;
+}
+
+@media (max-width:414px) {
+  .c1 {
+    height: 90px;
+  }
+}
+
+@media (max-width:414px) {
+  .c2 {
+    width: 235px;
+    height: 25px;
+    background-image: url('https://static-mh.content.disney.io/starwars/assets/navigation/sw_logo_horiz@2x-f98247cb30aa.png');
+  }
+}
+
+@media (max-width:414px) {
+  .c4 {
+    height: 45px;
+  }
+}
+
+@media (max-width:1024px) {
+  .c3 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width:414px) {
+  .c3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+<div
+  class="c0"
+>
+  <header
+    class="c1"
+  >
+    <a
+      alt="logo"
+      class="c2"
+      href="/"
+    />
+  </header>
+  <main
+    class="c3"
+  >
+    Test
+  </main>
+  <footer
+    class="c4"
+  >
+    <a
+      href="https://github.com/LeonardoHabitzreuter/star-wars"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <svg
+        class="mdi-icon "
+        fill="white"
+        height="36"
+        viewBox="0 0 24 24"
+        width="36"
+      >
+        <path
+          d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"
+        />
+      </svg>
+    </a>
+  </footer>
+</div>
+`;

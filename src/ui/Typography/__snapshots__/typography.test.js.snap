@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Typography component should render properly 1`] = `
+.c0 {
+  font-size: 14px;
+  color: #141414;
+  margin: 0;
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: left;
+}
+
+<span
+  class="c0"
+  color="#141414"
+>
+  Test
+</span>
+`;
