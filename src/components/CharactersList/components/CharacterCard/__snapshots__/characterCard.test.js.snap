@@ -1,0 +1,223 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CharacterCard component should render properly 1`] = `
+.c1 {
+  font-size: 22px;
+  color: #141414;
+  margin: 0;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.c3 {
+  font-size: 14px;
+  color: #141414;
+  margin: 0;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.c5 {
+  font-size: 14px;
+  color: #141414;
+  margin: 0;
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.c8 {
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+  padding: 8px 20px;
+  color: white;
+  border: solid 1px #000;
+  background-color: #545454;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+.c8:active {
+  background-color: #2e2e2e;
+}
+
+.c6 {
+  padding: 8px 20px;
+  padding: 0;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 8px;
+  border-radius: 4px;
+  border: solid 1px #fff;
+  box-sizing: border-box;
+  height: 150px;
+  width: 100%;
+  --cols: 3;
+  max-width: calc(100% / var(--cols) - 20px);
+  margin: 0 10px;
+  margin-bottom: 16px;
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.14);
+}
+
+.c2 {
+  width: 100%;
+  margin: 5px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c4 {
+  width: 50%;
+}
+
+.c7 {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+
+@media (max-width:414px) {
+  .c8 {
+    padding: 8px 20px;
+    width: 100%;
+  }
+}
+
+@media (max-width:414px) {
+  .c6 {
+    padding: 8px 20px;
+    width: 100%;
+  }
+}
+
+@media (max-width:1024px) {
+  .c0 {
+    --cols: 2;
+  }
+}
+
+@media (max-width:414px) {
+  .c0 {
+    --cols: 1;
+    max-width: 100%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width:414px) {
+  .c7 {
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+  }
+}
+
+<div
+  class="sc-fzokOt c0"
+>
+  <h5
+    class="c1"
+    color="#141414"
+  >
+    Luke Skywalker
+  </h5>
+  <div
+    class="c2"
+  >
+    <span
+      class="c3 c4"
+      color="#141414"
+    >
+      Height: 
+      <span
+        class="c5"
+        color="#141414"
+      >
+        172
+      </span>
+    </span>
+    <span
+      class="c3 c4"
+      color="#141414"
+    >
+      Mass: 
+      <span
+        class="c5"
+        color="#141414"
+      >
+        77
+      </span>
+    </span>
+  </div>
+  <div
+    class="c2"
+  >
+    <span
+      class="c3 c4"
+      color="#141414"
+    >
+      Birth year: 
+      <span
+        class="c5"
+        color="#141414"
+      >
+        19BBY
+      </span>
+    </span>
+    <span
+      class="c3 c4"
+      color="#141414"
+    >
+      Gender: 
+      <span
+        class="c5"
+        color="#141414"
+      >
+        male
+      </span>
+    </span>
+  </div>
+  <a
+    class="c6 c7"
+    href="/character/1"
+    modifier="secondary"
+    type="button"
+  >
+    <button
+      class="c8 c7"
+      type="button"
+    >
+      Details
+    </button>
+  </a>
+</div>
+`;

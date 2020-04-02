@@ -2,6 +2,7 @@
 
 exports[`Footer component should render properly 1`] = `
 .c0 {
+  background-color: #141414;
   box-sizing: border-box;
   height: 80px;
   display: -webkit-box;

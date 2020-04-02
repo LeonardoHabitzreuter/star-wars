@@ -2,7 +2,7 @@ import '@testing-library/jest-dom/extend-expect'
 import 'jest-styled-components'
 import React from 'react'
 import Toaster from './index'
-import { render } from '@testing-library/react'
+import { render } from 'test-utils'
 
 describe('Toaster component', () => {
   test('should render properly', () => {
