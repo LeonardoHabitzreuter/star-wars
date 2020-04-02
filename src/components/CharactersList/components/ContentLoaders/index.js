@@ -6,8 +6,9 @@ import { StyledCharacter } from '../CharacterCard/styles'
 
 // eslint-disable-next-line react/prop-types
 const Loader = ({ hide }) => (
-  <StyledCharacter hide={hide} >
+  <StyledCharacter hide={hide} data-testid="characterCard" >
     <ContentLoader
+      uniqueKey='unique'
       speed={2}
       width='100%'
       height={160}

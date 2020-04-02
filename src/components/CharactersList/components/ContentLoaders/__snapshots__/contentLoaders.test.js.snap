@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContentLoaders component should render properly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 8px;
+  border-radius: 4px;
+  border: solid 1px #fff;
+  box-sizing: border-box;
+  height: 150px;
+  width: 100%;
+  --cols: 3;
+  max-width: calc(100% / var(--cols) - 20px);
+  margin: 0 10px;
+  margin-bottom: 16px;
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.14);
+}
+
+@media (max-width:1024px) {
+  .c0 {
+    --cols: 2;
+  }
+}
+
+@media (max-width:414px) {
+  .c0 {
+    --cols: 1;
+    max-width: 100%;
+    margin: 10px 0;
+  }
+}
+
+<div
+  class="sc-AxjAm c0"
+  data-testid="characterCard"
+>
+  <svg
+    aria-labelledby="unique-aria"
+    height="160"
+    role="img"
+    viewBox="0 0 600 160"
+    width="100%"
+  >
+    <title
+      id="unique-aria"
+    >
+      Loading...
+    </title>
+    <rect
+      clip-path="url(#unique-diff)"
+      height="100%"
+      role="presentation"
+      style="fill: url(#unique-animated-diff);"
+      width="100%"
+      x="0"
+      y="0"
+    />
+    <defs
+      role="presentation"
+    >
+      <clippath
+        id="unique-diff"
+      >
+        <rect
+          height="35"
+          rx="3"
+          ry="3"
+          width="400"
+          x="100"
+          y="5"
+        />
+        <rect
+          height="20"
+          rx="3"
+          ry="3"
+          width="200"
+          x="0"
+          y="70"
+        />
+        <rect
+          height="20"
+          rx="3"
+          ry="3"
+          width="600"
+          x="400"
+          y="70"
+        />
+        <rect
+          height="20"
+          rx="3"
+          ry="3"
+          width="200"
+          x="0"
+          y="120"
+        />
+        <rect
+          height="20"
+          rx="3"
+          ry="3"
+          width="600"
+          x="400"
+          y="120"
+        />
+      </clippath>
+      <lineargradient
+        id="unique-animated-diff"
+      >
+        <stop
+          offset="0%"
+          stop-color="#f3f3f3"
+          stop-opacity="1"
+        >
+          <animate
+            attributeName="offset"
+            dur="2s"
+            keyTimes="0; 0.25; 1"
+            repeatCount="indefinite"
+            values="-2; -2; 1"
+          />
+        </stop>
+        <stop
+          offset="50%"
+          stop-color="#dbdbdb"
+          stop-opacity="1"
+        >
+          <animate
+            attributeName="offset"
+            dur="2s"
+            keyTimes="0; 0.25; 1"
+            repeatCount="indefinite"
+            values="-1; -1; 2"
+          />
+        </stop>
+        <stop
+          offset="100%"
+          stop-color="#f3f3f3"
+          stop-opacity="1"
+        >
+          <animate
+            attributeName="offset"
+            dur="2s"
+            keyTimes="0; 0.25; 1"
+            repeatCount="indefinite"
+            values="0; 0; 3"
+          />
+        </stop>
+      </lineargradient>
+    </defs>
+  </svg>
+</div>
+`;
