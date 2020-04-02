@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toaster component should render properly 1`] = `
+.c0 .Toastify__toast {
+  border-radius: 4px;
+  padding: 0;
+  padding: 24px;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.c0 .Toastify__toast--error {
+  background: #ff6361;
+}
+
+.c0 .Toastify__toast--success {
+  background: #69c724;
+}
+
+.c0 .Toastify__toast--warning {
+  background: yellow;
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="Toastify"
+  />
+</div>
+`;

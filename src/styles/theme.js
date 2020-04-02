@@ -20,3 +20,5 @@ export const phone = maxWidth('414px')
 export const tablet = maxWidth('1024px')
 
 export const getPrimary = R.path(['theme', 'colors', 'primary'])
+
+export const getSecondary = R.path(['theme', 'colors', 'secondary'])
