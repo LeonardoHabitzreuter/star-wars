@@ -39,7 +39,7 @@
     "parcel-bundler": "^1.12.3"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "husky": "^4.2.3",
     "mdi-react": "^6.2.0",
     "polished": "^3.4.1",
